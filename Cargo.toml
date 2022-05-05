@@ -1,0 +1,24 @@
+[package]
+name = "html-file-reload"
+version = "0.1.0"
+
+license = "Apache-2.0"
+repository = "https://github.com/TristanCacqueray/html-file-reload"
+documentation = "https://docs.rs/html-file-reload/"
+authors = ["TristanCacqueray"]
+readme = "README.md"
+
+description = "Watch an html file and hot reload with SSE."
+
+categories = ["development-tools"]
+
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+notify = "4.0.17"
+tokio = { version = "1", features = ["full"] }
+warp = "0.3"
+futures-util = "0.3"
+futures-channel = "0.3"
+tokio-stream = { version = "0.1.1", features = ["net"] }
